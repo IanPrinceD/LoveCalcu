@@ -1,0 +1,99 @@
+:root {
+ --font-s: 'Style Script';
+ --font-sk: 'Skranji';
+ --c-p: #D01760;
+ --c-lp: #FFB3D1;
+ --c-lv: #F7D5EE;
+}
+
+body {
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--c-lv);
+}
+
+h1 {
+ font-family: var(--font-sk);
+ font-size: 4em;
+ color: var(--c-lp);
+ -webkit-text-stroke: var(--c-p) 2px;
+}
+
+p {
+ font-family: var(--font-s);
+ font-size: 1.5em;
+ width: 85%;
+ text-align: center;
+ word-spacing: 3px;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 10px;
+}
+
+.label {
+ margin: 20px auto;
+ font-family: var(--font-sk);
+ color: var(--c-p);
+ font-size: 2em;
+}
+
+.itemName {
+ margin: 0 20px;
+}
+
+#addItemName1,
+#addItemName2 {
+ width: 25em;
+ height: 3em;
+ padding: 0 20px;
+ border-radius: 3rem;
+ border: var(--c-lp) solid;
+}
+
+#addItemName1 {
+ margin-right: 3em;
+}
+
+.btn {
+ margin: 2em;
+}
+
+#addItemButton,
+#resetButton {
+ width: 15em;
+ height: 3em;
+ border-radius: 3rem;
+ border: var(--c-p) solid;
+ color: var(--c-lp);
+ background-color: var(--c-p);
+ font-size: 1em;
+}
+
+#resetButton:hover {
+ border: var(--c-p) solid 1px;
+ color: var(--c-p);
+ background-color: var(--c-lp);
+}
+
+#addItemButton:hover {
+ border: var(--c-p) solid 1px;
+ color: var(--c-p);
+ background-color: var(--c-lp);
+}
+
+#loveResult,
+#result {
+ font-family: var(--font-s);
+ font-size: 1.5em;
+ width: 85%;
+ text-align: center;
+ word-spacing: 3px;
+}

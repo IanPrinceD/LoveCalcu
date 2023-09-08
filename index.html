@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <!-- skranji -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
+ <!-- style script -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+ <title>Love Calculator</title>
+</head>
+
+<body>
+ <h1>Love Calculator</h1>
+ <p>The Love Calculator provides a score from 0% to 100% that is meant to be an indication of a match in terms of love,
+  based on the names of two people. The higher the percentage, the better the match.</p>
+ <form action="javascript:void(0);" onsubmit="runActivity()" id="loveCalculatorForm">
+  <div class="label">
+   <label for="addItemName1" class="itemName">Type your name here</label>
+   <label for="addItemName2" class="itemName">Type his/her name here</label>
+  </div>
+  <div class="input">
+   <input id='addItemName1' name='addItemName1'>
+   <input id='addItemName2' name='addItemName2'>
+  </div>
+  <div class="btn">
+   <button id='addItemButton'>Calculate love</button>
+   <button type="reset" id="resetButton" onclick="resetForm()">Reset</button>
+  </div>
+ </form>
+ <div id="loveResult"></div>
+ <div id="result"></div>
+ <script src="love calcu.js"></script>
+</body>
+
+</html>
