@@ -12,8 +12,8 @@ body {
  flex-direction: column;
  justify-content: center;
  align-items: center;
- background-color: var(--c-lv);
 }
+
 
 h1 {
  font-family: var(--font-sk);
@@ -39,37 +39,28 @@ form {
 }
 
 .label {
- margin: 20px auto;
+ text-align: center;
  font-family: var(--font-sk);
  color: var(--c-p);
- font-size: 2em;
-}
-
-.itemName {
- margin: 0 20px;
+ font-size: 1.5em;
 }
 
 #addItemName1,
 #addItemName2 {
+ text-align: center;
  width: 25em;
  height: 3em;
+ margin: 10px;
  padding: 0 20px;
  border-radius: 3rem;
  border: var(--c-lp) solid;
-}
-
-#addItemName1 {
- margin-right: 3em;
-}
-
-.btn {
- margin: 2em;
 }
 
 #addItemButton,
 #resetButton {
  width: 15em;
  height: 3em;
+ margin: 10px;
  border-radius: 3rem;
  border: var(--c-p) solid;
  color: var(--c-lp);

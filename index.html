@@ -13,6 +13,10 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+ <!-- bootstrap -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 
  <title>Love Calculator</title>
 </head>
@@ -22,21 +26,34 @@
  <p>The Love Calculator provides a score from 0% to 100% that is meant to be an indication of a match in terms of love,
   based on the names of two people. The higher the percentage, the better the match.</p>
  <form action="javascript:void(0);" onsubmit="runActivity()" id="loveCalculatorForm">
-  <div class="label">
-   <label for="addItemName1" class="itemName">Type your name here</label>
-   <label for="addItemName2" class="itemName">Type his/her name here</label>
-  </div>
-  <div class="input">
-   <input id='addItemName1' name='addItemName1'>
-   <input id='addItemName2' name='addItemName2'>
-  </div>
-  <div class="btn">
-   <button id='addItemButton'>Calculate love</button>
-   <button type="reset" id="resetButton" onclick="resetForm()">Reset</button>
+  <div class="container">
+   <div class="label row">
+    <label for="addItemName1" class="itemName col">Type your name here</label>
+    <label for="addItemName2" class="itemName col">Type his/her name here</label>
+   </div>
+   <div class="input row">
+    <div class="col">
+     <input id='addItemName1' name='addItemName1' class="form-control">
+    </div>
+    <div class="col">
+     <input id='addItemName2' name='addItemName2' class="form-control">
+    </div>
+   </div>
+   <div class="row text-center">
+    <div class="col button">
+     <button id='addItemButton'>Calculate love</button>
+    </div>
+    <div class="col button">
+     <button type="reset" id="resetButton" onclick="resetForm()">Reset</button>
+    </div>
+   </div>
   </div>
  </form>
  <div id="loveResult"></div>
  <div id="result"></div>
+ <!-- bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
  <script src="love calcu.js"></script>
 </body>
 
